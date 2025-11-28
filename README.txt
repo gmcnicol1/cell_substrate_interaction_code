@@ -1,0 +1,5 @@
+Computational model for simulation of cell-ECM interactions
+
+This project implements an axisymmetric computational model of cell-substrate interaction, simulating the mechanical and biochemical response of a cell as it adheres to the surrounding extracellular matrix (ECM). The model is designed to study how varying parameters—such as substrate stiffness, cell contractility, or ECM geometry—influence cellular deformation, and stress distribution.
+
+The main simulation code is axisymmetric_code_example.m, which sets up the system of equations and solves the mechanical problem over time. Dimensional parameters are defined in this script and converted to dimensionless form. The dimensionless ODEs are then solved at each spatial location using MATLAB’s ode15s solver. The script saves the necessary data and calls axisymmetric_graphic_production.m to generate baseline figures showing model inputs and outputs, including substrate deformation, stress fields, and cellular responses. The main code can also be used for parameter sweeps, allowing exploration of how changes in model parameters affect outcomes.
